@@ -1,0 +1,565 @@
+<form className="c-card" action="#">
+    <div className="c-card__body">
+
+        <p className="c-form-field">
+            <label className="c-label" htmlFor="username">
+                Username
+            </label>
+            <input className="c-input" placeholder="Username*" type="text" name="username" id="username" required/>
+            <span className="c-label__error-message">
+                A username is required
+            </span>
+        </p>
+
+        <p className="c-form-field">
+            <label className="c-label" htmlFor="password">
+                Password
+            </label>
+            <span className="c-password-toggle-container">
+                <input className="c-input" placeholder="Password*" type="password" name="password" id="password" required/>
+                <span className="c-password-toggle">
+                    <input className="o-hide-accessible c-password-toggle__checkbox" type="checkbox" id="togglePasswordCheckbox" tabIndex={-1}/>
+                    <label className="c-password-toggle__label" htmlFor="togglePasswordCheckbox">
+                        <svg className="c-password-toggle__symbol c-password-toggle__symbol--show" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"><path d="M0 0h24v24H0V0z" fill="none"/>
+                            <path d="M12 6c3.79 0 7.17 2.13 8.82 5.5C19.17 14.87 15.79 17 12 17s-7.17-2.13-8.82-5.5C4.83 8.13 8.21 6 12 6m0-2C7 4 2.73 7.11 1 11.5 2.73 15.89 7 19 12 19s9.27-3.11 11-7.5C21.27 7.11 17 4 12 4zm0 5c1.38 0 2.5 1.12 2.5 2.5S13.38 14 12 14s-2.5-1.12-2.5-2.5S10.62 9 12 9m0-2c-2.48 0-4.5 2.02-4.5 4.5S9.52 16 12 16s4.5-2.02 4.5-4.5S14.48 7 12 7z"/>
+                        </svg>
+                        <svg className="c-password-toggle__symbol c-password-toggle__symbol--hide" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px">
+                            <path d="M0 0h24v24H0V0zm0 0h24v24H0V0zm0 0h24v24H0V0zm0 0h24v24H0V0z" fill="none"/><path d="M12 6c3.79 0 7.17 2.13 8.82 5.5-.59 1.22-1.42 2.27-2.41 3.12l1.41 1.41c1.39-1.23 2.49-2.77 3.18-4.53C21.27 7.11 17 4 12 4c-1.27 0-2.49.2-3.64.57l1.65 1.65C10.66 6.09 11.32 6 12 6zm-1.07 1.14L13 9.21c.57.25 1.03.71 1.28 1.28l2.07 2.07c.08-.34.14-.7.14-1.07C16.5 9.01 14.48 7 12 7c-.37 0-.72.05-1.07.14zM2.01 3.87l2.68 2.68C3.06 7.83 1.77 9.53 1 11.5 2.73 15.89 7 19 12 19c1.52 0 2.98-.29 4.32-.82l3.42 3.42 1.41-1.41L3.42 2.45 2.01 3.87zm7.5 7.5l2.61 2.61c-.04.01-.08.02-.12.02-1.38 0-2.5-1.12-2.5-2.5 0-.05.01-.08.01-.13zm-3.4-3.4l1.75 1.75c-.23.55-.36 1.15-.36 1.78 0 2.48 2.02 4.5 4.5 4.5.63 0 1.23-.13 1.77-.36l.98.98c-.88.24-1.8.38-2.75.38-3.79 0-7.17-2.13-8.82-5.5.7-1.43 1.72-2.61 2.93-3.53z"/>
+                        </svg>
+                        <span className="o-hide-accessible">Show password</span>
+                    </label>
+                </span>
+            </span>
+        </p>
+
+        <p className="c-button__align u-align-text-center">
+            <button className="o-button-reset c-button">Login</button>
+        </p>
+    </div>
+    <div className="c-card__footer">
+        <p className="u-align-text-center">
+            <a className="c-link__forgot-password" href="/forgotpassword">
+                Forgot password?
+            </a>
+        </p>
+    </div>
+</form>
+
+-------------------------------------------------------------------------------------------------
+
+<form className="c-user-layout__card" action="#">
+					<div className="c-user-form-placing">
+						<Form 
+							placeholder="Name*"
+							input="Name"
+							type="text"
+							class="name"
+						/>
+						<Form 
+							placeholder="First name*"
+							name="FirstName"
+							type="text"
+							class="name"
+						/>
+					</div>
+					
+					<div className="c-user-form-placing">
+						<div className="c-user-form c-user-box__position c-user-form__input-margin">
+							<label className="c-user-form__label">
+								Date of birth*
+							</label>
+							<select id="month" name="month" className="c-user-form__input-select c-user-box">
+								<option value="January">1</option>
+								<option value="February">2</option>
+								<option value="March">3</option>
+								<option value="April">4</option>
+								<option value="May">5</option>
+								<option value="June">6</option>
+								<option value="July">7</option>
+								<option value="August">8</option>
+								<option value="Septmber">9</option>
+								<option value="October">10</option>
+								<option value="November">11</option>
+								<option value="December">12</option>
+								<option value="December">13</option>
+								<option value="December">14</option>
+								<option value="December">15</option>
+								<option value="December">16</option>
+								<option value="December">17</option>
+								<option value="December">18</option>
+								<option value="December">19</option>
+								<option value="December">20</option>
+								<option value="December">21</option>
+								<option value="December">22</option>
+								<option value="December">23</option>
+								<option value="December">24</option>
+								<option value="December">25</option>
+								<option value="December">26</option>
+								<option value="December">27</option>
+								<option value="December">28</option>
+								<option value="December">29</option>
+								<option value="December">30</option>
+								<option value="December">31</option>
+							</select>							
+						</div>
+						<div className="c-user-form c-user-box__position c-user-form__margin-top c-user-form__input-margin">
+							<select id="month" name="month" className="c-user-form__input-select c-user-box">
+								<option value="January">January</option>
+								<option value="February">February</option>
+								<option value="March">March</option>
+								<option value="April">April</option>
+								<option value="May">May</option>
+								<option value="June">June</option>
+								<option value="July">July</option>
+								<option value="August">August</option>
+								<option value="Septmber">September</option>
+								<option value="October">October</option>
+								<option value="November">November</option>
+								<option value="December">December</option>
+							</select>							
+						</div>
+						<div className="c-user-form c-user-box__position c-user-form__margin-top c-user-form__input-margin">
+							<select id="month" name="month" className="c-user-form__input-select c-user-box">
+								<option value="January">2015</option>
+								<option value="February">2014</option>
+								<option value="March">2013</option>
+								<option value="April">2012</option>
+								<option value="May">2011</option>
+								<option value="June">2010</option>
+								<option value="July">2009</option>
+								<option value="August">2008</option>
+								<option value="Septmber">2007</option>
+								<option value="October">2006</option>
+								<option value="November">2005</option>
+								<option value="December">2004</option>
+								<option value="December">2003</option>
+								<option value="December">2002</option>
+								<option value="December">2001</option>
+								<option value="December">2000</option>
+							</select>							
+						</div>
+					</div>
+
+					<div className="c-user-form-placing">
+						<div className="c-user-form c-user-box__position c-user-form__input-margin">
+							<select 
+								className="c-user-form__input-select c-user-box"
+								placeholder="Gender*"
+								id="gender" 
+								name="gender" 				
+							>
+								<option value="" selected disabled>Gender*</option>
+								<option value="gender">Male</option>
+								<option value="gender">Female</option>
+								<option value="gender">Other</option>
+							</select>							
+						</div>
+						<div className="c-user-form">
+							<div className="c-user-form__weight-height">
+								<input 
+									className="c-user-form__input c-user-form__input-weight-height c-user-form__input-margin"
+									type="number"
+									placeholder="Height*"  
+									required
+								/>
+								<p className="c-user-form__cm">cm</p>
+							</div>
+						</div>
+						<div className="c-user-form">
+							<div className="c-user-form__weight-height">
+								<input 
+									className="c-user-form__input c-user-form__input-weight-height c-user-form__input-margin"
+									type="number"
+									placeholder="Weight*"  
+									required
+								/>
+								<p className="c-user-form__kg">kg</p>
+							</div>
+						</div>
+					</div>
+					
+					<div className="c-user-form-placing">
+						<div className="c-user-form">
+							<label className="c-user-form__label">
+								Description
+							</label>
+							<textarea className="c-user-form__input c-user-form__input-description" placeholder="Description..." name="description" required/>						
+						</div>
+					</div>
+					
+
+					<p className="u-align-text-center">
+						<button 
+							className="o-button-reset u-align-text-center c-user-layout__button"
+						>
+							Save user
+						</button>
+					</p>
+	    		</form>
+
+
+
+/* add user */
+import { Formik, Form, Field } from 'formik';
+import Photo from '../images/User.png'
+import { useState } from 'react';
+import { postData } from '../utils/dataAccess';
+import NewUser from '../utils/newUser';
+
+
+/* validation */
+const Testje = () => {
+	const [newUser, setNewUser] = useState<NewUser>({
+		firstName: "",
+		lastName: "",
+		weight: 0,
+		length: 0,
+		gender: "",
+		birthDate: new Date(),
+		therapistID: "",
+		description: "",
+		sessionID: ""
+	})
+
+	const addNewUser = () => {
+		console.log(newUser.firstName);
+
+		postData("http://smapi-ip-2.azurewebsites.net/api/users", {
+            firstName: newUser.firstName,
+			lastName: newUser.lastName,
+			weight: newUser.weight,
+			length: newUser.length,
+			gender: newUser.gender,
+			birthDate: newUser.birthDate,
+			therapistID: "09a0aaf5-4063-42d1-a35b-c50382b9a044",
+			description: newUser.description,
+			sessionID: "Aloha"
+        }).then((data) => {
+            console.log(data);
+			
+		}).catch((e) => console.error(e));
+	}
+
+
+    return(
+		<div className="c-user-layout">
+			<div className="c-user-layout__form">
+				<h1 className="c-user-layout__title">Add user</h1>
+				<Formik
+					initialValues={{
+						firstName: '',
+						lastName: '',
+						weight: 0,
+						length: 0,
+						gender: '',
+						birthDate: new Date,
+						therapistID: '09a0aaf5-4063-42d1-a35b-c50382b9a044',
+						description: '',
+						sessionID: 'Aloha'
+					}}
+					onSubmit={values => {
+						console.log(values);
+						setNewUser(values);
+						addNewUser();
+					}}
+				>
+				{({ errors, touched, isValidating }) => (
+					<Form>	
+						<div>
+							<label>
+								First name
+							</label>
+							<Field 
+								className="c-input" 
+								placeholder="Annelotte*"
+								type="text"
+								name="firstName"
+								id="firstName"
+							/>
+							{errors.firstName && touched.firstName ? <div className="c-validation">{errors.firstName}</div> : null}
+						</div>
+						<div>
+							<label>
+								Last name
+							</label>
+							<Field 
+								className="c-input" 
+								placeholder="Watch ID*"
+								type="text"
+								name="Schipper*"
+								id="lastName"
+							/>
+							{errors.lastName && touched.lastName ? <div className="c-validation">{errors.lastName}</div> : null}
+						</div>
+						<div>
+							<label>
+								Date of birth
+							</label>
+							<Field 
+								className="c-input" 
+								placeholder="Watch ID*"
+								type="date"
+								name="birthDate"
+								id="birthDate"
+							/>
+							{errors.birthDate && touched.birthDate ? <div className="c-validation">{errors.birthDate}</div> : null}
+						</div>
+						<div>
+							<label>
+								Weight
+							</label>
+							<Field 
+								className="c-input" 
+								placeholder="170*"
+								type="number"
+								name="weight"
+								id="weight"
+							/>
+							{errors.weight && touched.weight ? <div className="c-validation">{errors.weight}</div> : null}
+						</div>
+						<div>
+							<label>
+								Length
+							</label>
+							<Field 
+								className="c-input" 
+								placeholder="63,7*"
+								type="number"
+								name="length"
+								id="length"
+							/>
+							{errors.length && touched.length ? <div className="c-validation">{errors.length}</div> : null}
+						</div>
+						<div>
+							<label>
+								Gender
+							</label>
+							<Field 
+								className="c-input" 
+								placeholder="Gender*"
+								type="text"
+								name="gender"
+								id="gender"
+							/>
+							{errors.gender && touched.gender ? <div className="c-validation">{errors.gender}</div> : null}
+						</div>
+						<div>
+							<label>
+								Description
+							</label>
+							<Field 
+								className="c-input" 
+								placeholder="Annelotte has trouble with...*"
+								type="text"
+								name="description"
+								id="description"
+							/>
+							{errors.description && touched.description ? <div className="c-validation">{errors.description}</div> : null}
+						</div>
+						
+						<p className="c-button__align u-align-text-center">
+							<button className="o-button-reset c-button">Save user</button>
+						</p>
+					</Form>
+					)}
+				</Formik>
+			</div>
+			<aside className="c-user-image__holder">
+				<img className="c-user-image" src={Photo} alt="A drawing of charts and checklists."/>
+			</aside>
+		</div>
+	)
+}
+
+
+			
+export default Testje;
+
+-----------------------------
+/* CONNECTWATCH.TSX */
+-----------------------------
+import { connect, Field, Form, Formik } from "formik";
+import { useEffect } from "react";
+import { useState } from "react";
+import { Link, useHistory, useParams } from "react-router-dom";
+import Footer from "../components/footer/footer";
+import LogoLogin from "../components/general/logoLogin";
+
+import { get, postData } from "../utils/dataAccess";
+import SmartWatch from "../utils/watch";
+
+const ConnectWatch = (props: any) => {
+	const [user, SetUser] = useState("unknown");
+	const [userID, SetUserID] = useState("unknown");
+	const [connection, setConnection] = useState<SmartWatch>({
+		watchID: "",
+	});
+	const [userLst, SetUserLst] = useState<any[]>([]);
+
+	//@ts-ignore
+	const { id } = useParams();
+
+	useEffect(() => {
+		// UserData for getting name;
+		get("http://smapi-ip-2.azurewebsites.net/api/users").then((data) => {
+			let userList = [];
+
+			for (let i = 0; i < data.users.length; i++) {
+				userList.push(data.users[i]);
+			}
+			SetUserLst(userList);
+		});
+	}, []);
+	useEffect(() => {
+		for (let i = 0; i < userLst.length; i++) {
+			console.log(userLst[i].userID);
+			if (userLst[i].userID === id) {
+				SetUser(userLst[i].firstName);
+				SetUserID(userLst[i].userID);
+			}
+		}
+	}, [userLst]);
+
+	/* Validation */
+	// function validateString(value: any) {
+	// 	let error;
+	// 	if (!value) {
+	// 		error = "Required";
+	// 	} else if (!/^[ a-zA-Z\-\’]+$/i.test(value)) {
+	// 		error = "Only letters are allowed.";
+	// 	}
+	// 	return error;
+	// }
+
+	function validateNumber(value: any) {
+		let error;
+		if (!value) {
+			error = "Required";
+		} else if (value < 0) {
+			error = "The code has 4 numbers";
+		} else if (/^[ a-zA-Z\-\’]+$/i.test(value)) {
+			error = "Only letters are allowed.";
+		}
+		return error;
+	}
+
+	/* Connect to database */
+	const startNewSession = () => {
+		postData(
+			"http://smapi-ip-2.azurewebsites.net/api/session/publish_session",
+			{
+				userID: userID,
+				watchID: connection.watchID,
+				therapistID: "09a0aaf5-4063-42d1-a35b-c50382b9a044",
+			}
+		)
+			.then((data) => {
+				console.log(data);
+				
+			})
+			.catch((e) => console.error(e));
+	};
+
+	return (
+		<div>
+			<main className="c-main">
+				<Link
+					to={{
+						pathname: `/users`,
+					}}
+				>
+					<div>
+						<LogoLogin fill="#3f536c" />
+					</div>
+				</Link>
+
+				<section className="o-row__login c-page">
+					<div className="o-container u-max-width-xs">
+						<div className="c-card__dots">
+							<Formik
+								initialValues={{
+									watchID: "",
+									// name: '',
+								}}
+								onSubmit={(values) => {
+									console.log(values);
+									setConnection(values as SmartWatch);
+									startNewSession();
+								}}
+							>
+								{({ errors, touched, isValidating }) => (
+									<Form className="c-card" action="#">
+										<p>
+											Start session for{" "}
+											<span>{user}</span>
+										</p>
+										<div className="c-card__body">
+											<div className="c-form-field">
+												<label
+													className="c-label"
+													htmlFor="watch"
+												>
+													Watch ID
+												</label>
+												<Field
+													className="c-input"
+													validate={validateNumber}
+													placeholder="2546*"
+													type="text"
+													name="watchID"
+													id="watchID"
+												/>
+												{errors.watchID &&
+												touched.watchID ? (
+													<div className="c-validation">
+														{errors.watchID}
+													</div>
+												) : null}
+											</div>
+
+											{/* <div className="c-form-field">
+											<label className="c-label" htmlFor="User">
+												User
+											</label>
+											<span className="c-search-container">
+												<Field 
+													className="c-input" 
+													validate={validateString}
+													placeholder="User*" 
+													type="user" 
+													name="name" 
+													id="name"
+												/>
+												<span className="c-search">
+													<label className="c-search__label" htmlFor="togglesearchCheckbox">
+														<svg className="c-search__symbol" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/>
+															<path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+														</svg>
+													</label>
+												</span>
+												{errors.name && touched.name ? <div className="c-validation">{errors.name}</div> : null}
+											</span>
+										</div>  */}
+
+											<p className="c-button__align u-align-text-center">
+												<button className="o-button-reset c-button">
+													Start session
+												</button>
+											</p>
+										</div>
+									</Form>
+								)}
+							</Formik>
+						</div>
+					</div>
+				</section>
+
+				<Footer />
+			</main>
+		</div>
+	);
+};
+export default ConnectWatch;
+// function SmartWatch(SmartWatch: any): [any, any] {
+// 	throw new Error("Function not implemented.");
+// }

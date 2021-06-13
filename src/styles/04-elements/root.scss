@@ -1,0 +1,76 @@
+:root {
+	/*  CSS COLORS  */
+	--global-border-color: #e0e0e0;
+	--global-validation-color: #ff9798;
+
+	//size
+	--width: 1rem; //16px
+	//fontsize
+	--fontsize: 1rem;
+}
+@media only screen and (min-width: 319px) {
+	:root {
+		--width: 0.3rem;
+		--fontsize: 0.8rem;
+	}
+	.c-dashboard__aside {
+		display: none;
+	}
+	.c-dashboard__main {
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 920px) {
+	:root {
+		--width: 0.3rem;
+		--fontsize: 0.8rem;
+	}
+	.c-dashboard__aside {
+		display: block;
+	}
+	.c-dashboard__main {
+		display: grid;
+		grid-template-columns: 1fr 3fr;
+	}
+}
+@media only screen and (min-width: 1120px) {
+	:root {
+		--width: 0.5rem;
+		--fontsize: 0.8rem;
+	}
+	.c-dashboard__aside {
+		display: block;
+	}
+	.c-dashboard__main {
+		display: grid;
+		grid-template-columns: 1fr 3fr;
+	}
+}
+
+@media only screen and (min-width: 1350px) {
+	:root {
+		--width: 0.75rem;
+		--fontsize: 0.9rem;
+	}
+}
+
+@media only screen and (min-width: 1440px) {
+	:root {
+		--width: 1rem;
+		--fontsize: 1rem;
+	}
+}
+
+@media only screen and (min-width: 1680px) {
+	:root {
+		--width: 1.2rem;
+		--fontsize: 1.2rem;
+	}
+}
+@media only screen and (min-width: 1920px) {
+	:root {
+		--width: 1.4rem;
+		--fontsize: 1.4rem;
+	}
+}

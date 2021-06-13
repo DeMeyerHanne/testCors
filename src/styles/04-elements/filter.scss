@@ -1,0 +1,60 @@
+.c-filters {
+	&__title {
+		padding-top: calc(var(--width) / 1.5);
+		border-bottom: 2px solid $border-color;
+		&--text {
+			font-size: calc(var(--fontsize) * 1.4);
+		}
+	}
+	&__hidden-items {
+		display: flex;
+		width: 100%;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: center;
+		&--text {
+			padding-left: 1rem;
+		}
+	}
+}
+
+.c-filter {
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	background-color: map-get($colors-basic, "white");
+	border: 1px solid $border-color;
+	box-shadow: 0 0rem 1rem $box-shadow-color;
+	width: 100%;
+	margin: 0.5rem 0;
+	border-radius: 5px;
+	padding: 0 1rem 0rem 1rem;
+	overflow: hidden;
+
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		min-height: 3rem;
+		align-items: center;
+
+		&--svg {
+			width: 0.8rem;
+			transform: rotate(90deg);
+			transition: all 0.3s;
+		}
+	}
+	&__hidden-content {
+		transition: max-height 0.3s;
+		max-height: 0;
+		width: 100%;
+	}
+}
+
+.active {
+	padding-bottom: 0.8rem;
+}
+.rotate {
+	transform: rotate(-90deg);
+	transition: all 0.3s;
+}

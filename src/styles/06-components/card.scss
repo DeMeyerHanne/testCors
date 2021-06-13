@@ -1,0 +1,209 @@
+.c-card {
+    z-index: 1;
+
+    background: #FFF;
+    border: 1px solid $border-color;
+    border-radius: .625rem;
+    box-shadow: 0px .625rem 5rem $box-shadow-color;
+
+    overflow: hidden;
+
+    &__body,
+    &__footer {
+        overflow: hidden;
+    }
+
+    &__dots {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.c-card-error {
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background: #FFF;
+    border: 1px solid $border-color;
+    border-radius: .625rem;
+    box-shadow: 0px .625rem 5rem $box-shadow-color;
+
+    overflow: hidden;
+
+    &__body,
+    &__footer {
+        overflow: hidden;
+    }
+
+    &__dots {
+        display: flex;
+        justify-content: center;
+
+        margin: auto;
+        padding: 2.5625rem 2.4375rem;
+    }
+}
+
+.c-card-succes-or-failed {
+    z-index: 1;
+
+    background: #FFF;
+    border: 1px solid $border-color;
+    border-radius: .625rem;
+    box-shadow: 0px .625rem 5rem $box-shadow-color;
+
+    overflow: hidden;
+
+    &__body,
+    &__footer {
+        overflow: hidden;
+    }
+
+    &__dots {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding: 2.5625rem 2.4375rem;
+    }
+
+    &__image {
+        margin-bottom: 1rem;
+    }
+}
+
+.c-card-setup {
+    z-index: 1;
+
+    background: #FFF;
+    border: 1px solid $border-color;
+    border-radius: .625rem;
+    box-shadow: 0px .625rem 5rem $box-shadow-color;
+
+    overflow: hidden;
+
+    &__body,
+    &__footer {
+        overflow: hidden;
+    }
+
+    &__dots {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding: 2.5625rem 2.4375rem;
+    }
+
+    &__image {
+        margin-bottom: 1rem;
+    }
+}
+
+.c-page {
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+
+    // height: 100vh;
+    // width: 100%;
+}
+
+.c-main {  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    // height: 100vh;
+}  
+
+
+/* MEDIA QUERIES*/
+
+@media only screen and (min-width: 319px) {
+    .c-page {
+        height: 89vh;
+    }
+
+    .c-card {
+        width: calc(var(--width) * 50);
+        height: 360px;
+        // height: calc(var(--width) * 91.66666666666667);
+        padding: calc(var(--width) * 6.666666666666667) calc(var(--width) * 4.166666666666667) 0 calc(var(--width) * 4.166666666666667); 
+        margin-bottom: 1rem;
+
+        &__dots {
+            padding: 0;
+            margin-top: 3.5rem;
+        }
+
+        &--forgot-password {
+            width: calc(var(--width) * 50);
+            height: calc(var(--width) * 77.5);
+        }
+    }
+
+    .c-card-error {
+        width: 12.125rem;
+        height: 8.75rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .c-card-succes-or-failed {
+        width: calc(var(--width) * 50);
+        height: calc(var(--width) * 39.5);
+        padding: 1rem 1.5rem;
+    }
+
+    .c-card-setup {
+        width: calc(var(--width) * 50);
+        height: calc(var(--width) * 91.66666666666667);
+        padding: calc(var(--width) * 6.666666666666667) calc(var(--width) * 4.166666666666667) calc(var(--width) * 16.666666666666668) calc(var(--width) * 4.166666666666667); 
+        margin-bottom: 1rem;
+
+        &__dots {
+            padding: 0;
+            margin-top: 3.5rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .c-page {
+        height: 47vh;
+    }
+    
+    .c-card {
+        width: 25.75rem;
+        height: 22.375rem;
+        padding: 2.5625rem 3.0625rem;
+
+        &__dots {
+            margin: 0;
+        }
+    }
+
+    .c-card-error {
+        width: 21.3125rem;
+        height: 8.5rem;
+        padding: 2.5rem 5.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .c-card-succes-or-failed {
+        width: 21rem;
+        height: 12.5rem;
+        padding: 2.125rem;
+    }
+
+    .c-card-setup {
+        width: 25.75rem;
+        height: 16.5rem;
+        padding: 2.5625rem 3.0625rem;
+
+        &__dots {
+            margin: 0;
+        }
+    }
+}

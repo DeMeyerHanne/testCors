@@ -1,0 +1,37 @@
+body,
+html {
+	//font family moet nog aangepast worden (delete later)
+	font: 1rem/2 "IBM Plex Sans";
+	color: map-get($colors-basic, "darkblue");
+	background: map-get($colors-basic, "white");
+	height: 100vh;
+
+	::-webkit-scrollbar {
+		width: 0.5rem;
+	}
+
+	/* Track */
+
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+		background: map-get($colors-basic, "darkblue");
+		border-radius: 3px;
+	}
+
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+		background: #344458;
+	}
+
+	::-moz-selection {
+		background: $link;
+    	color: white;
+    	text-shadow: none;
+	}
+
+	::selection {
+		background: $link;
+		color: white;
+		text-shadow: none;
+	}
+}

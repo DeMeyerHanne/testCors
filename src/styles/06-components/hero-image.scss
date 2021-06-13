@@ -1,0 +1,53 @@
+.c-hero-image {   
+    margin-right: auto;
+    margin-left: auto;
+
+    object-fit: cover;
+
+
+    &__holder {
+        width: 100%;
+    }
+
+    &__login-dots-left {
+        position: absolute;
+        left: 655px;
+        top: 132px;
+        right: auto;
+        bottom: auto;
+    }
+
+    &__login-dots-right {
+        position: absolute;
+        left: 1148px;
+        top: 520px;
+        right: auto;
+        bottom: auto;
+    }
+}
+
+@media only screen and (min-width: 319px) {
+    .c-hero-image {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    .c-hero-image {
+        width: 100%;
+
+        &__holder {
+            // margin-top: 28px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+

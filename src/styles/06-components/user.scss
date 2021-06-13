@@ -1,0 +1,394 @@
+/* Add & edit user page */
+
+.c-user-layout {
+	display: flex;
+	width: 100%;
+	height: 100vh;
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__title {
+		all: unset;
+		color: $color-h1;
+		font-family: inherit;
+		font-weight: 400;
+
+		margin-bottom: 1.5rem;
+	}
+
+	&__card {
+		z-index: 1;
+
+		background: #fff;
+		border: 1px solid $border-color;
+		border-radius: 0.625rem;
+		box-shadow: 0px 0.625rem 5rem $box-shadow-color;
+
+		overflow: hidden;
+	}
+
+	&__button {
+		background: (map-get($colors-basic, "blue"));
+		color: (map-get($colors-basic, "white"));
+		font-weight: 400;
+		font-family: inherit;
+
+		border-radius: 0.625rem;
+
+		cursor: pointer;
+
+		&:hover {
+			box-shadow: 0 0 0.5rem $button-hover;
+		}
+
+		&:focus {
+			border: 1px solid $button-focus;
+		}
+
+		&:active {
+			background: $button-active;
+		}
+	}
+}
+
+.c-user-form {
+	&__label {
+		color: map-get($colors-basic, "color-input");
+		font-family: inherit;
+		font-weight: 400;
+
+		display: flex;
+		justify-content: flex-start;
+		margin-bottom: 0.5rem;
+	}
+
+	&__input {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+
+		background: map-get($colors-basic, "white");
+		color: map-get($colors-basic, "color-input");
+
+		border: 1px solid var(--global-border-color, --global-validation-color);
+		border-radius: 0.625rem;
+
+		&:hover {
+			border-color: $border-color-input--hover;
+			cursor: pointer;
+		}
+
+		&:active,
+		&:focus {
+			border: 1px solid $border-color-input--active;
+		}
+	}
+}
+
+.c-user-box {
+	background: map-get($colors-basic, "white");
+	color: map-get($colors-basic, "color-input");
+
+	border: 1px solid var(--global-border-color, --global-validation-color);
+	border-radius: 0.625rem;
+
+	background-position: right 5px top 50%;
+
+	&:hover {
+		border-color: $border-color-input--hover;
+		cursor: pointer;
+	}
+
+	&:active,
+	&:focus {
+		border: 1px solid $border-color-input--active;
+	}
+}
+
+.c-table-text {
+	color: #3f536c;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 319px) {
+	.c-user-layout {
+		justify-content: center;
+
+		&__form {
+			margin-top: 1.3125rem;
+			margin-bottom: auto;
+		}
+
+		&__title {
+			font-size: 1.5rem;
+			line-height: 2.375rem;
+		}
+
+		&__card {
+			width: 15rem;
+			height: 42.1875rem;
+			padding: 1.25rem 1.25rem;
+		}
+
+		&__button {
+			padding: 0.5625rem 3rem;
+			font-size: 1rem;
+		}
+	}
+
+	.c-user-form {
+		&__weight-height {
+			display: flex;
+			justify-content: flex-start;
+		}
+
+		&__kg {
+			margin-left: 0.5rem;
+		}
+
+		&__cm {
+			margin-left: 0.25rem;
+		}
+
+		&__label {
+			font-size: 1.25rem;
+			line-height: 2.1875rem;
+		}
+
+		&__input {
+			font-size: 1rem;
+			padding: 0.5rem 0.75rem;
+
+			&-margin {
+				margin-bottom: 0.5rem;
+			}
+
+			&-name {
+				width: 13.5rem;
+			}
+
+			&-general {
+				width: 13.5rem;
+			}
+
+			&-select {
+				width: 240px;
+				font-size: 1rem;
+				padding: 0.375rem 0.75rem;
+			}
+
+			&-weight-height {
+				width: 11.75rem;
+			}
+
+			&-description {
+				width: 13.5rem;
+				height: 11rem;
+
+				resize: none;
+			}
+		}
+
+		&-placing {
+			display: flex;
+			flex-direction: column;
+
+			margin-bottom: 1rem;
+		}
+	}
+
+	.c-user-image {
+		&__holder {
+			display: none;
+		}
+	}
+}
+
+@media only screen and (min-width: 769px) {
+	.c-user-layout {
+		justify-content: center;
+
+		&__form {
+			margin-top: auto;
+			margin-bottom: auto;
+		}
+
+		&__title {
+			font-size: 2rem;
+			line-height: 3rem;
+		}
+
+		&__card {
+			width: 32.25rem;
+			height: 40.75rem;
+			padding: 3.375rem 3.0625rem;
+		}
+
+		&__button {
+			display: flex;
+
+			padding: 0.875rem 2.625rem;
+			font-size: 1rem;
+		}
+	}
+
+	.c-user-form {
+		&__weight-height {
+			display: flex;
+			justify-content: flex-start;
+		}
+
+		&__margin-top {
+			margin-top: 2.38rem;
+		}
+
+		&__label {
+			font-size: 1.25rem;
+			line-height: 1.875rem;
+		}
+
+		&__input {
+			font-size: 1rem;
+			padding: 0.5rem 0.75rem;
+
+			&-name {
+				width: 13.5rem;
+			}
+
+			&-general {
+				width: 8.625rem;
+			}
+
+			&-select {
+				width: 162px;
+				font-size: 1rem;
+				padding: 0.375rem 0.75rem;
+			}
+
+			&-weight-height {
+				width: 7rem;
+			}
+
+			&-description {
+				width: 30.25rem;
+				height: 11rem;
+
+				resize: none;
+			}
+		}
+
+		&-placing {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-content: flex-end;
+
+			margin-bottom: 1.5rem;
+		}
+	}
+
+	.c-user-image {
+		&__holder {
+			display: none;
+		}
+	}
+}
+
+@media only screen and (min-width: 1080px) {
+	.c-user-layout {
+		justify-content: flex-start;
+
+		&__form {
+			margin-left: 5.75rem;
+			margin-top: auto;
+			margin-bottom: auto;
+		}
+
+		&__title {
+			font-size: 2rem;
+			line-height: 3rem;
+		}
+
+		&__card {
+			width: 57.5rem;
+			height: 43rem;
+			padding: 2.875rem 2.5rem;
+		}
+
+		&__button {
+			display: flex;
+			padding: 0.875rem 2.625rem;
+			font-size: 1rem;
+		}
+	}
+
+	.c-user-form {
+		&__margin-top {
+			margin-top: 2.75rem;
+		}
+
+		&__label {
+			font-size: 1.25rem;
+			line-height: 2.1875rem;
+		}
+
+		&__input {
+			font-size: 1rem;
+
+			&-general {
+				width: 15.75rem;
+				padding: 0.5625rem 0.75rem;
+			}
+
+			&-gender {
+				width: 15.75rem;
+				padding: 0.4rem 0.75rem;
+			}
+
+			&-select {
+				width: 276px;
+				font-size: 1rem;
+				padding: 0.4375rem 0.75rem;
+			}
+
+			&-weight-height {
+				width: 14.25rem;
+				padding: 0.5625rem 0.75rem;
+			}
+
+			&-description {
+				width: 56rem;
+				height: 10rem;
+
+				resize: none;
+			}
+		}
+
+		&-placing {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-content: flex-end;
+
+			margin-bottom: 1.5rem;
+		}
+	}
+
+	.c-user-image {
+		width: 39.75rem;
+		height: 39.75rem;
+
+		&__holder {
+			height: 100%;
+			width: 100%;
+
+			display: flex;
+			align-items: center;
+
+			margin-left: 9rem;
+		}
+	}
+}

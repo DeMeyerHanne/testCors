@@ -1,0 +1,68 @@
+/* PASSWORD */
+.c-password-toggle-container {
+    position: relative;
+    display: block;
+}
+
+.c-password-toggle {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.c-password-toggle__label {
+    display: flex;
+    align-items: center;
+    padding: .75rem .75rem .75rem 0;
+}
+
+.c-password-toggle__symbol {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: $icon-color;
+    cursor: pointer;
+}
+
+.c-password-toggle__symbol--hide {
+    display: none;
+}
+
+.c-password-toggle__checkbox:checked + .c-password-toggle__label .c-password-toggle__symbol--hide {
+    display: block;
+}
+
+.c-password-toggle__checkbox:checked + .c-password-toggle__label .c-password-toggle__symbol--show {
+    display: none;
+}
+
+
+
+/* SEARCH */
+.c-search {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    &-container {
+        position: relative;
+        display: block;
+    }
+
+    &__label {
+        display: flex;
+        align-items: center;
+        padding: .75rem .75rem .75rem 0;
+    }
+
+    &__symbol {
+        display: block;
+        width: 1.5rem;
+        height: 1.5rem;
+        fill: $icon-color;
+    }
+}

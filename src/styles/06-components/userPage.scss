@@ -1,0 +1,123 @@
+.c-UserPage {
+	&__main {
+		display: grid;
+		grid-template-columns: 1fr 3fr;
+	}
+	&__section {
+		position: relative;
+		background: map-get($colors-basic, "white");
+		&--tableContainer {
+			padding: 0.5rem 2.5rem 0 2.5rem;
+		}
+	}
+	&__options {
+		position: relative;
+		display: flex;
+		width: 1.5rem;
+		cursor: pointer;
+		&--container {
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			height: 3rem;
+		}
+	}
+	&__hidden-options {
+		display: block;
+		z-index: 100;
+		position: absolute;
+
+		height: 3rem;
+		right: 0;
+		width: 7rem;
+		top: 1.5rem;
+		background: map-get($colors-basic, "white");
+		border: 1px solid $border-color;
+		box-shadow: 0 0.6rem 1rem $box-shadow-color;
+
+		&--item {
+			background: map-get($colors-basic, "white");
+			border: none;
+			display: flex;
+			align-items: center;
+			transition: all 0.3s;
+			padding: 0.9rem 0;
+			&:hover {
+				background-color: hsl(220, 100%, 98%);
+			}
+
+			display: flex;
+			justify-content: space-between;
+			flex-direction: row;
+			width: 100%;
+			height: 50%;
+			p {
+				width: 100%;
+				padding-left: 1rem;
+			}
+		}
+		&--svg {
+			width: 1.4rem;
+			padding-left: 0.5rem;
+		}
+	}
+}
+
+.activeOptions {
+	display: block;
+}
+
+.hiddenOptions {
+	display: none;
+}
+
+table {
+	width: 100%;
+	color: "#3f536c";
+	text-align: left;
+	border: 1px solid black;
+}
+td {
+	padding: 0 1rem;
+	text-decoration: none;
+	border: none;
+}
+tr {
+	height: 3rem;
+	border: 1px solid rgba(map-get($colors-basic, "darkblue"), 0.1);
+}
+th {
+	padding: 0 1rem;
+	border: none;
+}
+
+tr:nth-child(even) {
+	background-color: hsl(220, 100%, 98%);
+}
+tr:nth-child(odd) {
+	background-color: #fff;
+}
+th {
+	background-color: white;
+}
+
+@media only screen and (min-width: 0px) {
+	.c-UserPage__main {
+		grid-template-columns: 1fr;
+	}
+	.hidden-info-user {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 700px) {
+	.hidden-info-user {
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 920px) {
+	.c-UserPage__main {
+		grid-template-columns: 1fr 3fr;
+	}
+}

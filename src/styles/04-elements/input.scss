@@ -1,0 +1,81 @@
+.c-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+
+    font-size: 1.5rem;
+    line-height: 2.1875rem;
+    color: $global-text-color;
+    font-family: inherit;
+
+    &__error-message {
+        font-size: .875rem;
+        color: $validation-color;
+        padding-bottom: 0;
+    }
+}
+
+.c-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    width: 23.5rem;
+    padding: .625rem 1rem;
+
+    border: 1px solid var(--global-border-color, --global-validation-color);
+    border-radius: 0.625rem;
+
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: 400;
+    outline: none;
+
+    transition: .1s ease-out;
+
+    &:hover {
+        border-color: $border-color-input--hover;
+        cursor: pointer;
+    }
+
+    &:active, 
+    &:focus {
+        border: 1px solid $border-color-input--active;
+    }
+}
+
+@media only screen and (min-width: 319px) {
+    .c-form-field {
+        margin-bottom: 0.75rem;
+    }
+
+    .c-label {
+        font-size: 1rem;
+        line-height: 1.5625rem;
+    }
+
+    .c-input {
+        width: 13.125rem;
+        padding: 0.9375rem 0.875rem;
+
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .c-form-field {
+        margin-bottom: 0.5rem;
+    }
+
+    .c-label {
+        font-size: 1.5rem;
+        line-height: 2.1875rem;
+    }
+
+    .c-input {
+        width: 23.75rem;
+        padding: 0.9375rem 0.875rem;
+
+        font-size: 1rem;
+    }
+}

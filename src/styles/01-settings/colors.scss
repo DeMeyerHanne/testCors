@@ -1,0 +1,50 @@
+// moet nog aangepast worden (delete later)
+
+$colors-basic: (
+	"white": #ffffff,
+	"red": #ff9798,
+	"yellow": #ffb55f,
+	"blue": #3476ff,
+
+	//blue ook voor box shadow, 5% standaard, 22% active/hover
+	"lightblue": hsl(220, 100%, 98%),
+	"darkblue": #3f536c,
+	"blue-button-focus": #1b64fb,
+	"blue-button-active": #1860f5,
+
+	"darkgray": #707070,
+	"color-h1": #414141,
+	"color-text": #5E5E5E,
+	"color-input": #202020,
+
+	"required": #EF3B1E,
+);
+
+$global-text-color: map-get($colors-basic, "darkgray");
+$required: #EF3B1E;
+
+$border-color: rgba(map-get($colors-basic, "darkblue"), 0.05);
+$border-color-input: #e0e0e0;
+$border-color-input--hover: rgba(#3f536c, .35);
+$border-color-input--active: #3f536c;
+
+$box-shadow-color: rgba(map-get($colors-basic, "blue"), 0.05);
+$box-shadow-color-active: rgba(map-get($colors-basic, "blue"), 0.22);
+
+/* BUTTON STATES */
+$button-hover: rgba(map-get($colors-basic, "blue"), 0.25);
+$button-focus: map-get($colors-basic, "blue-button-focus");
+$button-active: map-get($colors-basic, "blue-button-active");
+
+/* lINK TAGS */
+$link: map-get($colors-basic, "blue");
+$link-active: map-get($colors-basic, "blue-button-active");
+
+/* VALIDATION */
+$icon-color: map-get($colors-basic, "blue");
+$validation-color: map-get($colors-basic, "red");
+
+
+/* FORGOT PASSWORD */
+$color-h1: map-get($colors-basic, "color-h1");
+$color-text: map-get($colors-basic, "color-text");

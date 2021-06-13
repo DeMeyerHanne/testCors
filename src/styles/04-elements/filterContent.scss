@@ -1,0 +1,31 @@
+#step-tracker-label,
+#heart-rate-label,
+#calories-burned-label,
+#distance-traveled-label,
+#Blood-oxygen-lvl-label,
+#sleeptracking-label,
+#day-label,
+#week-label,
+#last-session-label,
+#month-label,
+#year-label,
+#all-time-label {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	align-items: center;
+}
+#step_tracker-text,
+#heart-rate-text,
+#calories-burned-text,
+#distance-traveled-text,
+#Blood-oxygen-lvl-text,
+#sleeptracking-text,
+#day-text,
+#week-text,
+#last-session-text,
+#month-text,
+#year-text,
+#all-time-text {
+	margin-left: 0.5rem;
+}

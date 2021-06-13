@@ -1,0 +1,161 @@
+.o-button-reset {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+    -webkit-appearance: none;
+}
+
+.c-button {
+    background: (map-get($colors-basic, "blue"));
+    color: (map-get($colors-basic, "white"));
+    font-size: var(--fontsize);
+    font-weight: 400;
+
+    border-radius: .625rem;
+
+    cursor: pointer;
+
+    &____align {
+        display: block;
+        justify-content: center !important;
+    }
+    
+    &:hover {
+        box-shadow: 0 .25rem .375rem $button-hover;
+    }
+
+    &:focus {
+        border: 1px solid $button-focus;
+    }
+    
+    &:active {
+        background: $button-active;
+    } 
+}
+
+.c-button__try-again {
+    background: (map-get($colors-basic, "blue"));
+    color: (map-get($colors-basic, "white"));
+    font-size: 1rem;
+    font-weight: 400;
+
+    border-radius: .625rem;
+
+    cursor: pointer;
+
+    &____align {
+        display: block;
+        justify-content: center !important;
+    }
+    
+    &:hover {
+        box-shadow: 0 0 .5rem $button-hover;
+    }
+
+    &:focus {
+        border: 1px solid $button-focus;
+    }
+    
+    &:active {
+        background: $button-active;
+    } 
+}
+
+.c-button__setup {
+    background: (map-get($colors-basic, "blue"));
+    color: (map-get($colors-basic, "white"));
+    font-size: 1rem;
+    font-weight: 400;
+
+    border-radius: .625rem;
+
+    cursor: pointer;
+
+    &____align {
+        display: block;
+        justify-content: center !important;
+    }
+    
+    &:hover {
+        box-shadow: 0 0 .5rem $button-hover;
+    }
+
+    &:focus {
+        border: 1px solid $button-focus;
+    }
+    
+    &:active {
+        background: $button-active;
+    } 
+}
+
+.c-link__forgot-password {
+    all: unset;
+    color: $link;
+    font-size: 1rem;
+
+    cursor: pointer;
+
+    &:active {
+        color: $link-active;
+    }
+}
+
+.u-align-text-center {
+    text-align: center;
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 319px) {
+    .c-button {
+        padding: .5rem 4.1875rem;
+        margin-top: .25rem;
+        margin-bottom: 2rem;
+
+        font-size: 1rem;
+    }
+
+    .c-button__try-again {
+        padding: 0.625rem 3.5rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .c-button__setup {
+        padding: .75rem 1.25rem;
+        margin-bottom: 2.75rem;
+        margin-top: 1.25rem;
+    }
+
+    
+}
+
+@media only screen and (min-width: 769px) {
+    .c-button {
+        padding: 0.625rem 3.75rem;
+        margin-top: 1.0625rem;
+        margin-bottom: 3rem;  
+         
+        font-size: 1rem;
+    }   
+    
+    .c-button__try-again {
+        padding: 0.625rem 3.5rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .c-button__setup {
+        padding: 1rem 2rem;
+        margin-bottom: 2.75rem;
+        margin-top: 2.25rem;
+    }
+}

@@ -1,0 +1,26 @@
+.c-logo {
+	display: flex;
+	padding-top: 1rem;
+	flex-direction: row;
+	align-items: baseline;
+	&__svg {
+		width: 2rem;
+	}
+	&__logoText {
+		font-size: 1rem;
+	}
+}
+
+@media only screen and (min-width: 319px) {
+	.c-logo__login {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 769px) {
+	.c-logo__login {
+		display: flex;
+
+		padding: 2rem 0 3.85rem 3.125rem;
+	}
+}
